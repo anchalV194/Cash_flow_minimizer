@@ -44,3 +44,20 @@ minimizer.addDebt("Barb", "Mike", 5000);
 minimizer.addDebt("Mike", "Eli", 3000);
 
 vector<Transaction> transactions = minimizer.minimizeTransactions();
+
+✅ Sample Execution
+🧾 Input:
+Eli → Barb: $1000
+
+Eli → Mike: $2000
+
+Barb → Mike: $5000
+
+Mike → Eli: $3000
+
+🧮 Net Balances:
+Eli: 0
+
+Barb: -$4000
+
+Mike: +$4000
